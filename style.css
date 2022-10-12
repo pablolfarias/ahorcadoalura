@@ -1,0 +1,1362 @@
+/* Clases Genericas */
+
+.ocultarElemento {
+    visibility: hidden;
+}
+
+.mostrarElemento {
+    visibility: visible;
+}
+
+/* Documento */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-width: 1024px;
+    max-width: 1920px;
+    font-family: 'Inter', sans-serif;
+    background: #F3F5FC;
+    overflow-x: hidden;
+}
+
+.Logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 40px;
+
+    position: absolute;
+    width: 8.333333333333333%;
+    left: 2.777777777777778%;
+    top: 3.90625%;
+}
+
+.informacion {
+    
+    left: auto;
+    right: auto;
+    opacity: 0.45;
+}
+
+.informacionIcono {
+    position: absolute;
+    width: 2%;
+    height: 4%;
+    left: 29.11111111111111%;;
+    top: 93%;
+}
+
+.informacionTexto {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 32%;
+    top: 93%;
+    font-weight: bold;
+}
+
+.pantallaUno {
+    /* Pantalla con botones Iniciar Juego y Agregar palabra*/
+    display: block;
+    transition: 20ms;
+
+}
+
+#iniciarJuego {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 22.01388888888889%;
+    height: 11.1328125%;
+    left: 37.83333333333333%;
+    top: 39.2578125%;
+    margin: 0 auto;
+
+    background: #0A3871;
+    border-color: #F3F5FC;
+    border-radius: 1em;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.125em;
+    line-height: 22px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+}
+
+#agregarPalabra {
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 19.44444444444444%;
+    height: 6.54296875%;
+    left: 39.20833333333333%;
+    top: 54.1015625%;
+
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 19px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #0A3871;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.pantallaDos {
+    /* Pantalla para Ingresar palabra*/
+    display: block;
+    transition: 20ms;
+}
+
+#inputAgregarPalabra {
+    position: absolute;
+    width: 50.76388888888889%;
+    left: 26.11111111111111%;
+    top: 25%;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    color: #0A3871;
+    font-size: 2em;
+    line-height: 150%;
+    background: #F3F5FC;
+    outline: none;
+    border: none;
+}
+
+#inputAgregarPalabra::placeholder {
+    color: #0A3871;
+    font-weight: bold;
+
+}
+
+.advertencia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 26.11111111111111%;
+    top: 65.13671875%;
+
+}
+
+#iconoAdvertencia {
+    width: auto;
+    height: 1.5625%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+#advertenciaParrafo {
+
+    width: auto;
+    height: 1.7578125%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.75em;
+    line-height: 150%;
+    padding-top: 14%;
+
+    color: #495057;
+
+    opacity: 0.8;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botonesPantallaDos {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 47.77777777777778%;
+    height: 6.54296875%;
+    left: 26.11111111111111%;
+    top: 74.45703125%;
+}
+
+#botonGuardarYEmpezar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+
+    width: 23.05555555555556%;
+    height: 6.54296875%;
+
+    background: #0A3871;
+    border: 2px solid #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+
+    color: #FFFFFF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#botonCancelarPantallaDos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+
+    width: 23.05555555555556%;
+    height: 6.54296875%;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    color: #0A3871;
+
+}
+
+.pantallaTres {
+    display: block;
+}
+
+.areaCanvas {
+    position: absolute;
+    width: 58%;
+    height: 90%;
+    left: 12%;
+    bottom: 12%;
+}
+
+
+.botonesPantallaTres {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    
+
+    position: absolute;
+    width: 47.77777777777778%;
+    height: 6.54296875%;
+    left: 26.11111111111111%;
+    top: 87.98828125%;
+}
+
+#nuevoJuego {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 23.05555555555556%;
+    height: 6.54296875%;
+
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    z-index: 100;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+#rendirse {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+    
+    width: 23.05555555555556%;
+    height: 6.54296875%;
+
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    z-index: 100;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 19px;
+    justify-content: center;
+    text-align: center;
+
+    color: #0A3871;
+}
+
+.advertenciaPerdiste,
+.advertenciaGanaste,
+.botonNuevoJuego,
+.botonRendirse {
+    visibility: hidden;
+}
+
+.alertaPerdiste,
+.alertaGanaste,
+.rectBotonNuevoJuego,
+.rectBotonRendirse {
+    position: absolute;
+    width: 56%;
+    height: 50%;
+    left: 22%;
+    top: 22%;
+    border-radius: 31px;
+    background: #F3F5FC;
+    box-shadow: 8px 8px 16px #868686, -8px -8px 16px #ffffff;
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+}
+
+.botonesAdvertenciaPerdiste,
+.botonesAdvertenciaGanaste,
+.botonesAdvertenciasPantallaTres {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+
+    position: absolute;
+    width: 60%;
+    height: 20%;
+    top: 75%;
+    left: 20%;
+}
+
+.botonJugarDeNuevoPerdiste,
+.botonJugarDeNuevoGanaste,
+.botonAceptarNuevoJuego,
+.botonAceptarRendirse {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+
+    position: relative;
+    width: auto;
+    height: 6.54296875%;
+
+
+    background: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 19px;
+    text-align: center;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.botonVolverMenuPerdiste,
+.botonVolverMenuGanaste,
+.botonCancelarNuevoJuego,
+.botonCancelarRendirse {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 24px;
+    gap: 8px;
+
+    position: relative;
+    width: auto;
+    height: 6.54296875%;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 19px;
+    justify-content: center;
+    text-align: center;
+
+    color: #0A3871;
+}
+
+.perdistePalabra,
+.ganastePalabra,
+#rectBotonNuevoJuegoTitulo,
+#rectBotonRendirseTitulo {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #0A3871;
+
+}
+
+.perdisteTexto,
+.ganasteTexto,
+#rectBotonNuevoJuegoTexto,
+#rectBotonRendirseTexto {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 25%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.perdistePalabraAdivinar,
+.ganastePalabraAdivinar {
+    position: absolute;
+    width: 100%;
+    top: 42%;
+    color: #0A3871;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+
+
+/* Tablets */ 
+/* Guia (Medidas Figma): width 768px - heigth 1024px */
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    
+    body {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 1024px;
+        min-width: 481px;
+        overflow-x: hidden;
+    }
+
+    .Logo {
+        position: absolute;
+        width: auto;
+        height: 4.812347888946533%;
+        left: 0.208333333333333%;
+        top: 7.1015625%;
+        z-index: 100;
+        
+    }
+    
+    #iniciarJuego {
+        position: absolute;
+        width: 39.58333333333333%;
+        height: 11.671875%;
+        left: 30.20833333333333%;
+        top: 38.921875%;
+        border-radius: 1.5em;
+
+        font-size: 1em;
+        line-height: 11.1875em;
+    }
+
+    #agregarPalabra {
+
+        
+        position: absolute;
+        width: 39.58333333333333%;
+        height: 6.54296875%;
+        left: 30.20833333333333%;
+        top: 52.88671875%;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.5em;
+
+    }
+
+    .informacion {
+        visibility: visible;
+    }
+
+    .informacion {
+    
+        left: auto;
+        right: auto;
+        
+    }
+    
+    .informacionIcono {
+        position: absolute;
+        width: 2%;
+        height: 4%;
+        left: 17.11111111111111%;;
+        top: 95.5%;
+    }
+    
+    .informacionTexto {
+        position: absolute;
+        width: auto;
+        height: auto;
+        left: 20%;
+        top: 96.5%;
+        font-weight: bold;
+    }
+
+    #inputAgregarPalabra {
+        position: absolute;
+        width: 45.81770833333333%;
+        left: 5.08333333333333%;
+        top: 23.4375%;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        color: #0A3871;
+        font-size: 2em;
+        line-height: 150%;
+        background: #F3F5FC;
+        outline: none;
+        border: none;
+    }
+
+    .advertencia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 8px;
+    
+        position: absolute;
+        width: 14.97395833333333%;
+        height: 1.7578125%;
+        left: 5.208333333333333%;
+        top: 86.23046875%;
+
+    
+    }
+    
+    #iconoAdvertencia {
+        width: 1em;
+        height: 1em;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    
+    #advertenciaParrafo {
+    
+        width: auto;
+        height: auto;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.75em;
+        line-height: 150%;
+        padding-top: 14%;
+        color: #495057;
+        opacity: 0.8;
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .botonesPantallaDos {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 1.5em;
+        
+        position: absolute;
+        width: 89.58333333333333%;
+        height: 8.54296875%;
+        left: 5.208333333333333%;
+        top: 89.55078125%;
+    }
+    
+    #botonGuardarYEmpezar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px;
+        gap: 8px;
+    
+        width: 43.22916666666667%;
+        height: auto;
+    
+        background: #0A3871;
+        border: 2px solid #0A3871;
+        border-radius: 24px;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 19px;
+        text-align: center;
+        justify-content: center;
+        z-index: 100;
+        color: #FFFFFF;
+    
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+    
+    #botonCancelarPantallaDos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px;
+        gap: 8px;
+    
+        width: 43.22916666666667%;
+        height: auto;
+    
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+        z-index: 100;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+    
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 19px;
+        text-align: center;
+        justify-content: center;
+        color: #0A3871;
+    }
+    
+    .pantallaTres {
+        overflow-x: hidden;
+    }
+
+    .areaCanvas {
+        position: absolute;
+        width: 150%;
+        height: 78.125%;
+        margin-left: -30.5rem ;        
+    }
+
+
+    .botonesPantallaTres {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 1.5em;
+        
+    
+        position: absolute;
+        width: 86.97916666666667%;
+        height: 6.54296875%;
+        left: 5.208333333333333%;
+        top: 89.55078125%;
+    }
+
+    #nuevoJuego {
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.5em;
+        gap: 0.5em;
+
+        width: 23.05555555555556%;
+        height: auto;
+
+        background: #0A3871;
+        border: 1px solid #0A3871;
+        border-radius: 1.5em;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+    }
+
+    #rendirse {
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5em;
+        gap: 0.5em;
+        
+        width: 23.05555555555556%;
+        height: auto;
+
+        border: 1px solid #0A3871;
+        border-radius: 1.5em;
+        z-index: 100;
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 19px;
+        justify-content: center;
+        text-align: center;
+
+        color: #0A3871;
+    }
+
+    
+    .alertaPerdiste,
+    .alertaGanaste,
+    .rectBotonNuevoJuego,
+    .rectBotonRendirse {
+        position: absolute;
+        width: 80%;
+        height: 40%;
+        left: 10%;
+        top: 32%;
+        border-radius: 31px;
+        background: #F3F5FC;
+        box-shadow: 8px 8px 16px #868686, -8px -8px 16px #ffffff;
+        border: 1px solid #FFFFFF;
+        opacity: 1;
+    }
+
+    .botonesAdvertenciaPerdiste,
+    .botonesAdvertenciaGanaste,
+    .botonesAdvertenciasPantallaTres {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        
+        position: absolute;
+        width: 90%;
+        height: 20%;
+        top: 75%;
+        left: 5%;
+    }
+
+    .botonJugarDeNuevoPerdiste,
+    .botonJugarDeNuevoGanaste,
+    .botonAceptarNuevoJuego,
+    .botonAceptarRendirse {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px;
+        gap: 8px;
+
+        position: relative;
+        width: auto;
+        height: auto;
+
+
+        background: #0A3871;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.2em;
+        line-height: 19px;
+        text-align: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+
+    .botonVolverMenuPerdiste,
+    .botonVolverMenuGanaste,
+    .botonCancelarNuevoJuego,
+    .botonCancelarRendirse {
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px;
+        gap: 8px;
+
+        position: relative;
+        width: auto;
+        height: auto;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1.2em;
+        line-height: 19px;
+        justify-content: center;
+        text-align: center;
+
+        color: #0A3871;
+    }
+
+    .perdistePalabra,
+    .ganastePalabra,
+    #rectBotonNuevoJuegoTitulo,
+    #rectBotonRendirseTitulo {
+        position: absolute;
+        width: 100%;
+        top: 5%;
+
+        text-align: center;
+        font-size: 3em;
+        font-weight: bold;
+        color: #0A3871;
+
+    }
+
+    .perdisteTexto,
+    .ganasteTexto,
+    #rectBotonNuevoJuegoTexto,
+    #rectBotonRendirseTexto {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 25%;
+        font-size: 1.7em;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .perdistePalabraAdivinar,
+    .ganastePalabraAdivinar {
+        position: absolute;
+        width: 100%;
+        top: 42%;
+        color: #0A3871;
+        text-align: center;
+        font-weight: bold;
+        font-size: 3em;
+    }
+}
+
+/* Celulares */
+/* Guia (Medidas Figma): width 375px - heigth 667px  */
+
+@media only screen and (min-device-width : 300px) and (max-device-width : 480px) {
+
+    body {
+        width: 100%;
+        max-width: 480px;
+        min-width: 300px;
+        overflow-x: hidden;
+    }
+
+    .Logo {
+        position: absolute;
+        width: auto;
+        height: 7.19640179910045%;
+        left: -4.266666666666667%;
+        top: 3.598200899550225%;
+        z-index: 100;
+    }
+
+    #iniciarJuego {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 1.5em;
+        gap: 0.5em;
+        
+        position: absolute;
+        width: 84.53333333333333%;
+        height: 15.74212893553223%;
+        left: 7.733333333333333%;
+        top: 42.12893553223388%;
+
+        background: #0A3871;
+        border-radius: 1.5em;
+        
+        font-size: 1em;
+        line-height: 1.1875em;
+    }
+
+    #agregarPalabra {
+
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.5em;
+        gap: 0.5em;
+
+        position: absolute;
+        width: 74.13333333333333%;
+        height: 10.04497751124438%;
+        left: 12.8%;
+        top: 60.26986506746627%;
+
+        border: 1px solid #0A3871;
+        border-radius: 1.5em;
+
+    }
+
+    .informacion {
+        visibility: visible;
+        left: auto;
+        right: auto;
+    }
+   
+    .informacionIcono {
+        position: absolute;
+        width: 2%;
+        height: 4%;
+        left: 6.11111111111111%;;
+        top: 95.8%;
+        visibility: hidden;
+    }
+    
+    .informacionTexto {
+        position: absolute;
+        width: 90%;
+        height: auto;
+        top: 96.5%;
+        left: 5%;
+        font-weight: bold;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    #inputAgregarPalabra {
+        position: absolute;
+        width: auto;
+        width: auto;
+        left: 5.08333333333333%;
+        top: 23.4375%;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        color: #0A3871;
+        font-size: 2em;
+        line-height: 150%;
+        background: #F3F5FC;
+        outline: none;
+        border: none;
+    }
+
+    .advertencia {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+        gap: 0.5em;
+        
+        position: absolute;
+        width: 30.66666666666667%;
+        height: 2.698650674662669%;
+        left: 4.266666666666667%;
+        top: 67.61619190404798%;
+    }
+    
+    #iconoAdvertencia {
+        width: 1em;
+        height: 1em;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    
+    #advertenciaParrafo {
+    
+        width: auto;
+        height: auto;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 0.75em;
+        line-height: 150%;
+        padding-top: 14%;
+        color: #495057;
+        opacity: 0.8;
+    
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+    }
+
+    .botonesPantallaDos {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 1em;
+        
+        position: absolute;
+        width: 91.46666666666667%;
+        height: 23.68815592203898%;
+        left: 4.266666666666667%;
+        top: 72.71364317841079%;
+        
+    }
+    
+    #botonGuardarYEmpezar {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.5em;
+        gap: 0.5em;
+        
+        width: auto;
+        height: auto;
+        
+        background: #0A3871;
+        border-radius: 1.5em;
+
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+
+    }
+    
+    #botonCancelarPantallaDos {
+        
+        box-sizing: border-box;
+        
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        padding: 1.5em;
+        gap: 0.5em;
+
+        width: auto;
+        height: auto;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+    .pantallaTres {
+        overflow-x: hidden;
+    }
+
+    .areaCanvas {
+        position: absolute;
+        width: 162%;
+        height: 75%;
+        left: -55.5%;
+        bottom: 0%;
+    }
+
+    .botonesPantallaTres {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 24px;
+        position: absolute;
+        width: 91.46666666666667%;
+        height: 23.68815592203898%;
+        left: 4.266666666666667%;
+        top: 104.7976011994003%;
+    }
+
+    #nuevoJuego {
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.5em;
+        gap: 0.5em;
+        
+        width: auto;
+        height: auto;
+        z-index: 100;
+        background: #0A3871;
+        border-radius: 1.5em;
+        
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+
+    #rendirse {
+        
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1.5em;
+        gap: 0.5em;
+
+        width: auto;
+        height: auto;
+        z-index: 100;
+        border: 1px solid #0A3871;
+        border-radius: 1.5em;
+        
+        flex: none;
+        order: 1;
+        align-self: stretch;
+        flex-grow: 0;
+    }
+    
+    .alertaPerdiste,
+    .alertaGanaste,
+    .rectBotonNuevoJuego,
+    .rectBotonRendirse {
+        position: absolute;
+        width: 85%;
+        height: 75%;
+        left: 9%;
+        top: 22%;
+        border-radius: 31px;
+        background: #F3F5FC;
+        box-shadow: 8px 8px 16px #868686, -8px -8px 16px #ffffff;
+        border: 1px solid #FFFFFF;
+        opacity: 1;
+    }
+
+    .botonesAdvertenciaPerdiste,
+    .botonesAdvertenciaGanaste,
+    .botonesAdvertenciasPantallaTres {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 0.5em;
+        
+        position: relative;
+        width: auto;
+        left: 0%;
+        height: 25%;
+        top: 70%;
+
+    }
+
+    .botonJugarDeNuevoPerdiste,
+    .botonJugarDeNuevoGanaste,
+    .botonAceptarNuevoJuego,
+    .botonAceptarRendirse {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 50px;
+        gap: 0.5em;
+
+        position: relative;
+        width: 80%;
+        height: 20%;
+
+
+        background: #0A3871;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 19px;
+        text-align: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+
+    .botonVolverMenuPerdiste,
+    .botonVolverMenuGanaste,
+    .botonCancelarNuevoJuego,
+    .botonCancelarRendirse {
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 24px 50px;
+        gap: 8px;
+
+        position: relative;
+        width: 80%;
+        height: 20%;
+        border: 1px solid #0A3871;
+        border-radius: 24px;
+
+        flex: none;
+        order: 1;
+        flex-grow: 1;
+
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 1em;
+        line-height: 19px;
+        justify-content: center;
+        text-align: center;
+
+        color: #0A3871;
+    }
+
+    .perdistePalabra,
+    .ganastePalabra,
+    #rectBotonNuevoJuegoTitulo,
+    #rectBotonRendirseTitulo {
+        position: absolute;
+        width: 100%;
+        top: 5%;
+
+        text-align: center;
+        font-size: 1.8em;
+        font-weight: bold;
+        color: #0A3871;
+
+    }
+
+    .perdisteTexto,
+    .ganasteTexto,
+    #rectBotonNuevoJuegoTexto,
+    #rectBotonRendirseTexto {
+        position: absolute;
+        width: 100%;
+        height: auto;
+        top: 17%;
+        font-size: 1em;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    .perdistePalabraAdivinar,
+    .ganastePalabraAdivinar {
+        position: absolute;
+        width: 100%;
+        top: 28%;
+        color: #0A3871;
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.8em;
+
+    }
+    
+
+}
